@@ -1,282 +1,382 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Right Resume</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" media="print" onload="this.media='all'"/>
-    <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"/>
-    </noscript>
-    <link href="css/font-awesome/css/all.min.css?ver=1.2.0" rel="stylesheet">
-    <link href="css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
-    <link href="css/aos.css?ver=1.2.0" rel="stylesheet">
-    <link href="css/main.css?ver=1.2.0" rel="stylesheet">
-    <noscript>
-      <style type="text/css">
-        [data-aos] {
-            opacity: 1 !important;
-            transform: translate(0) scale(1) !important;
-        }
-      </style>
-    </noscript>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
   </head>
-  <body id="top">
-    <header class="d-print-none">
-      <div class="container text-center text-lg-left">
-        <div class="py-3 clearfix">
-          <h1 class="site-title mb-0">Mohana Moganti</h1>
-          <div class="site-nav">
-            <nav role="navigation">
-              <ul class="nav justify-content-center">
-                <li class="nav-item"><a class="nav-link" href="https://twitter.com/mohana4984" title="Twitter"><i class="fab fa-twitter"></i><span class="menu-title sr-only">Twitter</span></a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/mohan.moganti.9" title="Facebook"><i class="fab fa-facebook"></i><span class="menu-title sr-only">Facebook</span></a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/_dead_stone_" title="Instagram"><i class="fab fa-instagram"></i><span class="menu-title sr-only">Instagram</span></a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="https://github.com/Dead-Stone" title="Github"><i class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">John Doe</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">John Doe</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
-    </header>
-    <div class="page-content">
-      <div class="container">
-<div class="cover shadow-lg bg-white">
-  <div class="cover-bg p-3 p-lg-4 text-white">
-    <div class="row">
-      <div class="col-lg-4 col-md-5">
-        <div class="avatar hover-effect bg-white shadow-sm p-1"><img src="images/avatar1.png" width="200" height="200"/></div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
       </div>
-      <div class="col-lg-8 col-md-7 text-center text-md-start">
-        <h2 class="h1 mt-2" data-aos="fade-left" data-aos-delay="0">Mohana Satyanarayana Moganti</h2>
-        <p data-aos="fade-left" data-aos-delay="100">Data Scientist & Software Developer</p>
-        <div class="d-print-none" data-aos="fade-left" data-aos-delay="200"><a class="btn btn-light text-dark shadow-sm mt-1 me-1" href="resume.pdf" target="_blank">Download CV</a><a class="btn btn-success shadow-sm mt-1" href="#contact">Hire Me</a></div>
-      </div>
-    </div>
-  </div>
-  <div class="about-section pt-4 px-3 px-lg-4 mt-1">
-    <div class="row">
-      <div class="col-md-6">
-        <h2 class="h3 mb-3">About Me</h2>
-        <p>Hello! I’m Mohana Satyanarayana Moganti. I am passionate about Data Science and Software Development. I am a skilled Backend Developer and master in Database management with experience in MSSQL, MongoDB and PostgreSQL.</p>
-      </div>
-      <div class="col-md-4 offset-md-1">
-        <div class="row mt-2">
-          <div class="col-sm-4">
-            <div class="pb-1">Age</div>
-          </div>
-          <div class="col-sm-8">
-            <div class="pb-1 text-secondary">25</div>
-          </div>
-          <div class="col-sm-4">
-            <div class="pb-1">Email</div>
-          </div>
-          <div class="col-sm-8">
-            <div class="pb-1 text-secondary">mohanasatyanarayana.moganti@sjsu.edu</div>
-          </div>
-          <div class="col-sm-4">
-            <div class="pb-1">Phone</div>
-          </div>
-          <div class="col-sm-8">
-            <div class="pb-1 text-secondary">+1 (669) 329-9412</div>
-          </div>
-          <div class="col-sm-4">
-            <div class="pb-1">Address</div>
-          </div>
-          <div class="col-sm-8">
-            <div class="pb-1 text-secondary">101, E San Fernando St, CA, U.S.A</div>
-          </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">John Doe</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
         </div>
       </div>
-    </div>
-  </div>
-  <hr class="d-print-none"/>
-  <div class="skills-section px-3 px-lg-4">
-    <h2 class="h3 mb-3">Professional Skills</h2>
-    <div class="row">
-      <div class="col-md-6">
-        <div class="mb-2"><span>Python</span>
-          <div class="progress my-1">
-            <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="100" data-aos-anchor=".skills-section" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
         </div>
-        <div class="mb-2"><span>SQL</span>
-          <div class="progress my-1">
-            <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="200" data-aos-anchor=".skills-section" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-        <div class="mb-2"><span>CPP</span>
-          <div class="progress my-1">
-            <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="300" data-aos-anchor=".skills-section" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="mb-2"><span>Linux</span>
-          <div class="progress my-1">
-            <div class="progress-bar bg-success" role="progressbar" data-aos="zoom-in-right" data-aos-delay="400" data-aos-anchor=".skills-section" style="width: 80%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-        <div class="mb-2"><span>Sketch</span>
-          <div class="progress my-1">
-            <div class="progress-bar bg-success" role="progressbar" data-aos="zoom-in-right" data-aos-delay="500" data-aos-anchor=".skills-section" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-        <div class="mb-2"><span>Adobe XD</span>
-          <div class="progress my-1">
-            <div class="progress-bar bg-success" role="progressbar" data-aos="zoom-in-right" data-aos-delay="600" data-aos-anchor=".skills-section" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <hr class="d-print-none"/>
-  <div class="work-experience-section px-3 px-lg-4">
-    <h2 class="h3 mb-4">Work Experience</h2>
-    <div class="timeline">
-      <div class="timeline-card timeline-card-primary card shadow-sm">
-        <div class="card-body">
-          <div class="h5 mb-1">RFA Software Associate Analyst <span class="text-muted h6">at Deloitte</span></div>
-          <div class="text-muted text-small mb-2">August, 2021 - May, 2023</div>
-          <div>Handling issues related to database and stored procedures using
-            MSSQL. Resolving tickets related to MSSQL, stored procedure,
-            ASP files and working on server side issues. Working with client
-            on real time issues on production environment.</div>
-        </div>
-      </div>
-      <div class="timeline-card timeline-card-primary card shadow-sm">
-        <div class="card-body">
-          <div class="h5 mb-1">Software Trainee Engineer <span class="text-muted h6">at YuppTV Pvt. Ltd.</span></div>
-          <div class="text-muted text-small mb-2">Janurary, 2020 - June, 2021</div>
-          <div>Building a RESTFul API for the project named TURITO using
-            Scala. Later Turito was registered as separate Company.
-            Creating SQL Queries, schema, stored procedures to implement
-            functionalities.</div>
-        </div>
-      </div>
-      <div class="timeline-card timeline-card-primary card shadow-sm">
-        <div class="card-body">
-          <div class="h5 mb-1">Intern <span class="text-muted h6">at CDAC</span></div>
-          <div class="text-muted text-small mb-2">June, 2019 - July, 2019</div>
-          <div>Short term internship cum training from the CDAC(Center for Development of Advanced Computing) on Cyber
-            security.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <hr class="d-print-none"/>
-  <div class="page-break"></div>
-  <div class="education-section px-3 px-lg-4 pb-4">
-    <h2 class="h3 mb-4">Education</h2>
-    <div class="timeline">
-      <div class="timeline-card timeline-card-success card shadow-sm">
-        <div class="card-body">
-          <div class="h5 mb-1">Masters in Software Engineering <span class="text-muted h6">from San Jose State University</span></div>
-          <div class="text-muted text-small mb-2">2023 - Present</div>
-        </div>
-      </div>
-      <div class="timeline-card timeline-card-success card shadow-sm">
-        <div class="card-body">
-          <div class="h5 mb-1">Bachelor of Information Technology <span class="text-muted h6">from Osmania University</span></div>
-          <div class="text-muted text-small mb-2">2016 - 2020</div>
-          <div class="text-muted text-medium mb-2">CGPA - 3.54/4</div>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-  <hr class="d-print-none"/>
-  <div class="contant-section px-3 px-lg-4 pb-4" id="contact">
-    <h2 class="h3 text mb-3">Contact</h2>
-    <div class="row">
-      <div class="col-md-7 d-print-none">
-        <div class="my-2"><form action="https://formspree.io/f/mbjvpzeb"
-    method="POST">
-  <div class="row">
-    <div class="col-6">
-      <input class="form-control" type="text" id="name" name="name" placeholder="Your Name" required>
-    </div>
-    <div class="col-6">
-      <input class="form-control" type="email" id="email" name="_replyto" placeholder="Your E-mail" required>
-    </div>
-  </div>
-  <div class="form-group my-2">
-    <textarea class="form-control" style="resize: none;" id="message" name="message" rows="4"  placeholder="Your Message" required></textarea>
-  </div>
-  <button class="btn btn-primary mt-2" type="submit">Send</button>
-</form>
-        </div>
-      </div>
-      <div class="col">
-        <div class="mt-2">
-          <h3 class="h6">Address</h3>
-          <div class="pb-2 text-secondary">101, E San Fernando St, California, U.S.A</div>
-          <h3 class="h6">Phone</h3>
-          <div class="pb-2 text-secondary">+1 (669) 329-9412</div>
-          <h3 class="h6">Email</h3>
-          <div class="pb-2 text-secondary">mohanasatyanarayana.moganti@sjsu.edu</div>
-        </div>
-      </div>
-      <div class="col d-none d-print-block">
-        <div class="mt-2">
-          <div>
-            <div class="mb-2">
-              <div class="text-dark"><i class="fab fa-twitter mr-1"></i><span>https://twitter.com/mohana4984</span>
-              </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Frontend Development</p>
             </div>
-            <div class="mb-2">
-              <div class="text-dark"><i class="fab fa-facebook mr-1"></i><span>https://www.facebook.com/mohan.moganti.9</span>
-              </div>
-            </div>
-            <div class="mb-2">
-              <div class="text-dark"><i class="fab fa-instagram mr-1"></i><span>https://www.instagram.com/_dead_stone_</span>
-              </div>
-            </div>
-            <div class="mb-2">
-              <div class="text-dark"><i class="fab fa-github mr-1"></i><span>https://github.com/Dead-Stone</span>
-              </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div></div>
-    </div>
-    <footer class="pt-4 pb-4 text-muted text-center d-print-none">
-      <div class="container">
-        <div class="my-3">
-          <div class="h4">Mohana Moganti</div>
-          <div class="footer-nav">
-            <nav role="navigation">
-              <ul class="nav justify-content-center">
-                <li class="nav-item"><a class="nav-link" href="https://twitter.com/mohana4984" title="Twitter"><i class="fab fa-twitter"></i><span class="menu-title sr-only">Twitter</span></a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/mohan.moganti.9" title="Facebook"><i class="fab fa-facebook"></i><span class="menu-title sr-only">Facebook</span></a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/_dead_stone_" title="Instagram"><i class="fab fa-instagram"></i><span class="menu-title sr-only">Instagram</span></a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="https://github.com/Dead-Stone" title="Github"><i class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a>
-                </li>
-              </ul>
-            </nav>
+          <div class="text-container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
+              reprehenderit et laborum, rem, dolore eum quod voluptate
+              exercitationem nobis, nihil esse debitis maxime facere minus sint
+              delectus velit in eos quo officiis explicabo deleniti dignissimos.
+              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
+              reiciendis ea magnam? Nulla, impedit fuga!
+            </p>
           </div>
         </div>
-        <div class="text-small">
-          <div class="mb-1">&copy; Right Resume. All rights reserved.</div>
-          <div>Design - <a href="https://templateflip.com/" target="_blank">TemplateFlip</a></div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
       </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
     </footer>
-    <script src="scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
-    <script src="scripts/aos.js?ver=1.2.0"></script>
-    <script src="scripts/main.js?ver=1.2.0"></script>
+    <script src="script.js"></script>
   </body>
 </html>
